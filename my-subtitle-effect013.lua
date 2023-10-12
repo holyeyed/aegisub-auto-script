@@ -26,7 +26,7 @@ function add_effect(subs, sel)
 		end
 	end
 	E.comment=true
-	E.text="mw=640 mh=480 function pos(lw,x,y) s=lw-mw s0=(mw-lw/2)/2 if s>0 then if x<=mw/2 then return \"\"..(x+s/2+s0)..\",\"..y..\"\" else return \"\"..(x-mw/2+s0)..\",\"..(y+line.height)..\"\" end else return \"\"..x..\",\"..y..\"\" end end function rdcl() return string.format(\"%x\",math.random(0,0xffffff)) end cl=rdcl()"
+	E.text="mw=1280 mh=720 function pos(lw,x,y) s=lw-mw s0=(mw-lw/2)/2 if s>0 then if x<=mw/2 then return \"\"..(x+s/2+s0)..\",\"..y..\"\" else return \"\"..(x-mw/2+s0)..\",\"..(y+line.height)..\"\" end else return \"\"..x..\",\"..y..\"\" end end function rdcl() return string.format(\"%x\",math.random(0,0xffffff)) end cl=rdcl()"
 	E.effect="code once"
 	subs.insert(1,E)
 	--//-------------------------
