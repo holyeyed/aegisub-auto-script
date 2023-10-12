@@ -26,7 +26,7 @@ function add_effect(subs, sel)
 		end
 	end
 	E.comment=true
-	E.text="!retime(\"syl\",math.min(-700,-$start/2),-$dur)!{\\alpha&Hff&\\pos($x,$y)\\t(\\alpha&H00&)}"
+	E.text="!retime(\"syl\",-700-$start/2,-$dur)!{\\alpha&Hff&\\pos($x,$y)\\t(\\alpha&H00&)}"
 	E.effect="template syl"
 	subs.insert(1,E)
 	--//-------------------------
